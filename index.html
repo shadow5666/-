@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات عن تاكاشي أوياما</title>
+    <style>
+        body, html {
+            background-color: #1c1c1c;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            overflow-y: auto;
+            height: 100%;
+            margin: 0;
+        }
+        input[type="password"] {
+            padding: 8px;
+            margin: 8px;
+            font-size: 16px;
+            border: 2px solid #555;
+            background-color: #333;
+            color: #fff;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #444;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .content h2 {
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .info {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .info h2 {
+            margin-bottom: 15px;
+            color: red;
+        }
+
+        .info p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>معلومات عن تاكاشي أوياما</h1>
+    
+    <!-- معلومات عن تاكاشي أوياما -->
+    <div class="info">
+        <h2>معلومات عن تاكاشي أوياما</h2>
+        <p><strong>الاسم:</strong> تاكاشي أوياما</p>
+        <p><strong>العمر:</strong> 22 سنة</p>
+        <p><strong>الوظيفة:</strong> ضابط</p>
+        <p><strong>الحالة:</strong> مختفي منذ فترة، وُجدت جثته على جانب الطريق السريع في وضع غامض</p>
+        <p><strong>الطول:</strong> 178 سم</p>
+        <p><strong>الوزن:</strong> 65 كجم</p>
+        <p><strong>معلومات عنه:</strong> شخص انطوائي طيب القلب، ويتمنى الخير للجميع دائمًا حتى لو كان على حساب نفسه. حلمه أن يكون بطلًا يتذكره الناس.</p>
+        <p><strong>القصة:</strong> كان تاكاشي أوياما ضابطًا طموحًا وموهوبًا، وكان على وشك الزواج عندما اختفى فجأة في ظروف غامضة. أثناء اختفائه، كان قريبًا من كشف سر كبير سيغير مجرى العالم. وقد كان هو من حل لغز "فتاتان مول بلازا"، الذي أثار الجدل في المدينة.</p>
+    </div>
+    
+    <p>من فضلك، أدخل كلمة المرور للمتابعة:</p>
+    
+    <input type="password" id="password" placeholder="أدخل كلمة المرور">
+    <button onclick="checkPassword()">اكتشاف المزيد</button>
+
+    <div class="content" id="content">
+        <h2>أدلة إضافية من تحقيقات تاكاشي أوياما:</h2>
+        <p><strong>الدليل 1:</strong> رئيس هذه المنظمة السرية يعمل في مكان عام بين الناس.</p>
+        <p><strong>الدليل 2:</strong> تجري هذه المنظمة تجارب بشعة على البشر وتستهدف الأطفال خصيصًا حتى يكونوا تحت أمرتهم ويطيعون كل كلامهم.</p>
+        <p><strong>الدليل 3:</strong> التجارب الفاشلة مصيرها الإلقاء في الشوارع وقتل الناس.</p>
+        <p><strong>الدليل 4:</strong> سجله رافينيا.</p>
+        <p><strong>الدليل 5:</strong> لا توجد معلومات عن التجارب الناجحة، لكن هناك الكثير منهم.</p>
+        <p><strong>الدليل 6:</strong> التجارب الناجحة مرعبة أكثر مما يتصور الجميع، ومن شبه المستحيل القضاء عليهم.</p>
+        <p><strong>الدليل 7:</strong> أي شخص يحاول البحث حول المنظمة يُقتل.</p>
+        <p><strong>الدليل 8:</strong> اسم المنظمة هو "بافالو".</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctPassword = "91196589"; // كلمة المرور الجديدة
+            if (password === correctPassword) {
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("كلمة المرور غير صحيحة، حاول مرة أخرى.");
+            }
+        }
+    </script>
+
+</body>
+</html>
